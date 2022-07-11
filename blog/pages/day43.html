@@ -11,7 +11,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="../blogContent.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/7f1b5525c2.js" crossorigin="anonymous"></script>
-  <title>7/5/2022 Blog</title>
+  <title>7/7/2022 Blog</title>
 </head>
 
 <body>
@@ -39,13 +39,13 @@
     </nav>
   </div>
 
-  <header class="masthead" style="background-image: url('../../media/images/blog/7-5/gantry3.JPG');">
+  <header class="masthead" style="background-image: url('../../media/images/blog/7-7/fullMatrix.JPG')">
     <div class="container position-relative px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
           <div class="post-heading">
-            <h1>Came a Far Way</h1>
-            <span class="meta">Posted on July 5th, 2022</span>
+            <h1>It Works!!</h1>
+            <span class="meta">Posted on July 7th, 2022</span>
           </div>
         </div>
       </div>
@@ -61,99 +61,53 @@
           <h2 class="section-heading">Gambit</h2>
           
           <p>
-            I finally got the gantry running as smoothly as I wanted. It took completely dismantaling the old gantry setup, creating a new base 
-            board, and aligning things numerous times. It was all worth it to finally see the it run as it did.    
+            After inhaling more solder fumes, I finally finished the sensing matrix comprised of 64 hall effect 
+            sensors spaced at 2.25 inch increments with a wiring format that is easy to route within the pane of 
+            acrylic I will be using. 
           </p>
 
           <p>
-            Going into the FEDC, I thought I would go ahead and just quickly attach the new gantry parts to the existing board. I quickly decided 
-            that I wouldn't. Instead, I went ahead and grabbed some of the scrap wood to make the housing of the board. Starting with the base. It 
-            was the first time in a while that I was in the machine shop so I was a bit nervous, but once I got going it felt like I was right at home. 
-          </p>
-
-          <p>
-            With the new base cut, I was able to quickly add all the parts I had created for the gantry to the board with the help of my calipers. It was 
-            beautiful to see. With everything aligned, I already went ahead and connected the motors and belt system to see it running. 
+            I have used an immense amount of wiring and will not be able to replicate the matrix with the 
+            amount of wires I have left, but luckily, the current matrix will suffice.  
           </p>
 
           <a href="#!">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="../../media/images/blog/7-5/gantry1.JPG" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="../../media/images/blog/7-5/gantry2.JPG" alt="Second slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+            <img class="img-fluid" src="../../media/images/blog/7-7/fullMatrix.JPG">
           </a>
           <span class="caption text-muted">
-            Base and the Gantry
+            Full Matrix
           </span>
           
           <p>
-           After seeing that sytem work, I started creating the rest of the housing. As of now the board will be 24x27x2.5 inches. I may be able to make it 
-           thinner, but that depends on the thickness of top plate. It is crazy to see this coming together.
+           With the matrix complete, I went ahead and began editing the script to account for all of the new 
+           columns and rows. From there, I immediately saw that the system was obtaining readings from 
+           each sensor by putting a magnet in each of their proximities
+          </p>
+
+          <p>
+            Along with that, I added the acrylic sheet of around .22 inches, the thickest I would ever consider using 
+            for the system and saw that the hall effect sensors were still capable of reading the magnet placed 
+            above it. Success. Success at last.
           </p>
 
           <a href="#!">
-            <img class="img-fluid" src="../../media/images/blog/7-5/gantry3.JPG">
+            <img class="img-fluid" src="../../media/images/blog/7-7/Magnet.JPG">
           </a>
           <span class="caption text-muted">
-            Board Housing
+            Magnet Check
           </span>
 
           <p>
-            The parts of the board truly came together and worked pretty seemlessly. There is always room for improvement, but for the time being, it works 
-            remarkably there. 
+            On top of getting the sensing matrix sorted, I also recieved a set of new limit switches. I ordered 
+            these new switches due to their smaller size in hopes of having an easier installation. 
           </p>
 
           <a href="#!">
-            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="../../media/images/blog/7-5/gantry4.JPG" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="../../media/images/blog/7-5/gantry5.JPG" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="../../media/images/blog/7-5/gantry6.JPG" alt="Second slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-
-              <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+            <img class="img-fluid" src="../../media/images/blog/7-7/limit.jpg">
           </a>
           <span class="caption text-muted">
-            Gantry Components
+            Limit Switches
           </span>
-
-          <p>
-            Before working on the chess engine and the communication it will have with the rest of the system, I have a few more things to 
-            care of. Those things being the sensing selection, the routing of the board for wire management, and the top plate that will be the 
-            playing surface for the users. 
-          </p>
-
-
-
 
           <h2 class="section-heading">Habit Tracking</h2>
           <p>
@@ -163,7 +117,7 @@
 
           <h2 class="section-heading">What I am thankful for</h2>
           <p>
-            I am thankful for the machinery at the engineering facility that has allowed me to expand on my skills and projects. 
+            I am thankful for the sensing matrix. It has kept me patient and made me joyous when I saw it complete. 
           </p>
           <span class="caption text-muted">
             <!-- Family is everything-. - J.D. -->
@@ -172,15 +126,15 @@
           <nav aria-label="..." class="">
             <ul class="pagination justify-content-center">
               <li class="page-item ">
-                <a class="page-link" href="day40.html" tabindex="-1">Previous</a>
+                <a class="page-link" href="day42.html" tabindex="-1">Previous</a>
               </li>
-              <li class="page-item "><a class="page-link" href="day40.html">40</a></li>
+              <li class="page-item "><a class="page-link" href="day42.html">42</a></li>
               <li class="page-item active">
-                <a class="page-link" href="day41.html">41<span class="sr-only">(current)</span></a>
+                <a class="page-link" href="day43.html">43<span class="sr-only">(current)</span></a>
               </li>
-              <li class=" page-item"><a class="page-link" href="day42.html">42</a></li>
+              <li class=" page-item"><a class="page-link" href="day44.html">44</a></li>
               <li class=" page-item">
-                <a class="page-link " href="day42.html">Next</a>
+                <a class="page-link " href="day44.html">Next</a>
               </li>
             </ul>
           </nav>
