@@ -1,62 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="style_new.css" rel="stylesheet" type="text/css">
+    <link href="newStyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
+	<header>
+		<a href="#" class="logo">Logo</a>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Resume</a></li>
+			<li><a href="#">Blog</a></li>
+		</ul>
+	</header>
+	
+	<section>
+		<img src="media/main/stars.png" id="stars">
 
-    <nav class="navbar navbar-default navbar-expand-md  navbar-dark fixed-top" id="navbar">
-        <div class="container-fluid">
-            <button class="navbar-toggle navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-start" id="navbarResponsive">
-                <ul class="navbar-nav nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cover" id="active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutpage">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Personal Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#CProjects">Class Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#recognitions">Recognitions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Duarte-Joshua-MEEN10_2.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Cover area -->
+		<h2 id="textFront">Joshua Duarte</h2>
+		<h4 id="textBottom">Mechanical Engineer | U.C. Berkeley '23</h4>
+		<img src="media/main/mountainBack.png" id="mountainsBack">
+		<img src="media/main/mountainFront.png" id="mountainsFront">
+	</section>
 
-    <div id="particles-js">
-        <div class="container-fluid" id="coverphoto">
-            <div class="container-fluid" id="coverphoto">
-                <img class="translate-middle name" src="media/images/Other/coverphoto.png" style="width: 100%; ">
-            </div>
-        </div>
-    </div>
+	<div class="spacer layerBack" style="z-index: 10"></div>
 
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+	<div class="sec dark">
+		<h2>Parallax Test</h2>
+		<p>Lorem ipsum dolor, sit amet 
+			consectetur adipisicing elit. 
+			Dolorem accusamus tempore, culpa hic animi sunt sapiente quidem at sed et, ex, commodi fugiat minus aliquid corporis adipisci totam nulla. Voluptas.
+			Lorem ipsum dolor, sit amet 
+			consectetur adipisicing elit. 
+			Dolorem accusamus tempore, culpa hic animi sunt sapiente quidem at sed et, ex, commodi fugiat minus aliquid corporis adipisci totam nulla. Voluptas.Lorem ipsum dolor, sit amet 
+			consectetur adipisicing elit. 
+			Dolorem accusamus tempore, culpa hic animi sunt sapiente quidem at sed et, ex, commodi fugiat minus aliquid corporis adipisci totam nulla. Voluptas.Lorem ipsum dolor, sit amet 
+			consectetur adipisicing elit. 
+			Dolorem accusamus tempore, culpa hic animi sunt sapiente quidem at sed et, ex, commodi fugiat minus aliquid corporis adipisci totam nulla. Voluptas.Lorem ipsum dolor, sit amet 
+			consectetur adipisicing elit. 
+			Dolorem accusamus tempore, culpa hic animi sunt sapiente quidem at sed et, ex, commodi fugiat minus aliquid corporis adipisci totam nulla. Voluptas.Lorem ipsum dolor, sit amet 
+			consectetur adipisicing elit. 
+			Dolorem accusamus tempore, culpa hic animi sunt sapiente quidem at sed et, ex, commodi fugiat minus aliquid corporis adipisci totam nulla. Voluptas.Lorem ipsum dolor, sit amet 
+			consectetur adipisicing elit. 
+			Dolorem accusamus tempore, culpa hic animi sunt sapiente quidem at sed et, ex, commodi fugiat minus aliquid corporis adipisci totam nulla. Voluptas.</p>
+	</div>
+
+
+	<script>
+		let stars = document.getElementById("stars");
+		let mountainBack= document.getElementById("mountainsBack");
+		let mountainFront = document.getElementById("mountainsFront");
+		let textFront = document.getElementById("textFront");
+		let textBottom = document.getElementById("textBottom");
+
+		window.addEventListener("scroll", function(){
+			let value = window.scrollY;
+			stars.style.left = value * .25 + 'px';
+			textFront.style.top =  40 + value * .09 + 'vh';
+			textBottom.style.top =  45 + value * .09 + 'vh';
+			mountainBack.style.bottom = value * .1 + 'px';
+		} )
+	</script>
 </body>
 </html>
