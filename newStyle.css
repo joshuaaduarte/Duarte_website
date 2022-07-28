@@ -12,52 +12,25 @@ body {
     background: linear-gradient(#2b1055, #7597de);
     background-repeat: no-repeat;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
-header {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    padding: 30px 100px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-
-}
-
-header .logo{
+.navbar-default {
+    max-width: 100%;
+    height: 5vh;
+  }
+  
+  #navbar {
+    background-color: #161f297c;
+  }
+  
+  #collapseicon {
     color: white;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li{
-    list-style: none;
-    margin-left: 20px;
-}
-
-header ul li a{
-    text-decoration: none;
-    padding: 6px 15px; 
+  }
+  
+  #active {
     color: white;
-    border-radius: 20px;
-}
-
-header ul li a:hover, header ul li a.active{
-    background-color: white;
-    color: #2b1055;
-}
+  }
 
 section{
     position: relative;
@@ -122,6 +95,7 @@ section img#stars{
     position: relative; 
     padding: 100px;
     z-index: 10;
+
 }
 
 .sec h2{
@@ -192,6 +166,22 @@ section img#stars{
     z-index: 10 !important;
     background-image: url('media/svg/layerBack.svg');
 } 
+
+.layerBack2 {
+    position: relative;
+    z-index: 10 !important;
+    background-image: url('media/svg/layerBack2.svg');
+} 
+
+.layer3 {
+    position: relative;
+    z-index: 10 !important;
+    background-image: url('media/svg/layer3.svg');
+} 
+
+.z-up{
+    z-index: 15;
+}
 
 @media (min-width: 1025px){
     #textBottom{
