@@ -67,14 +67,25 @@
 
 	<div class="container-fluid dark" style="z-index: 10">
 	<div class="row justify-content-center"> 
-		<div class="card text-bg-dark col-8" style="z-index: 10; padding: 10%;">
+		<!-- <div class="card text-bg-dark col-8" style="z-index: 10; padding: 10%;">
 			<img src="media/main/josh.png" class="card-img" alt="...">
 			<div class="card-img-overlay">
 			<h5 class="card-title">Card title</h5>
 			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 			<p class="card-text">Last updated 3 mins ago</p>
 		</div>
-	  </div>
+	  </div> -->
+
+	  	<div id="container">
+			<div id="inner">
+				<h2 id="aboutMeTitle"> Hi! I'm Josh</h2>
+				<p id="aboutMeContent">
+				I am a Master of Engineering Mechanical Engineering student 
+				at U.C. Berkeley. I am an avid learner who is constantly seeking his next challenge.
+				</p>
+			</div>
+		</div>
+	  
 	</div>
 	</div>
 
@@ -97,6 +108,87 @@
 			textBottom.style.top =  45 + value * .09 + 'vh';
 			mountainBack.style.bottom = value * .1 + 'px';
 		} )
+
+	</script>
+
+	<script>
+		(function() {
+		// Init
+		var container = document.getElementById("container"),
+			inner = document.getElementById("inner");
+
+		// Mouse
+		var mouse = {
+			_x: 0,
+			_y: 0,
+			x: 0,
+			y: 0,
+			updatePosition: function(event) {
+			var e = event || window.event;
+			this.x = e.clientX - this._x;
+			this.y = (e.clientY - this._y) * -.1;
+			},
+			setOrigin: function(e) {
+			this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+			this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+			},
+			show: function() {
+			return "(" + this.x + ", " + this.y + ")";
+			}
+		};
+
+		// Track the mouse position relative to the center of the container.
+		mouse.setOrigin(container);
+
+		//-----------------------------------------
+
+		var counter = 0;
+		var updateRate = 10;
+		var isTimeToUpdate = function() {
+			return counter++ % updateRate === 0;
+		};
+
+		//-----------------------------------------
+
+		var onMouseEnterHandler = function(event) {
+			update(event);
+		};
+
+		var onMouseLeaveHandler = function() {
+			inner.style = "";
+		};
+
+		var onMouseMoveHandler = function(event) {
+			if (isTimeToUpdate()) {
+			update(event);
+			}
+		};
+
+		//-----------------------------------------
+
+		var update = function(event) {
+			mouse.updatePosition(event);
+			updateTransformStyle(
+			(mouse.y / inner.offsetHeight / 2).toFixed(2),
+			(mouse.x / inner.offsetWidth / 2).toFixed(2)
+			);
+		};
+
+		var updateTransformStyle = function(x, y) {
+			var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+			inner.style.transform = style;
+			inner.style.webkitTransform = style;
+			inner.style.mozTransform = style;
+			inner.style.msTransform = style;
+			inner.style.oTransform = style;
+		};
+
+		//-----------------------------------------
+
+		container.onmouseenter = onMouseEnterHandler;
+		container.onmouseleave = onMouseLeaveHandler;
+		container.onmousemove = onMouseMoveHandler;
+		})();
 	</script>
 </body>
 </html>
