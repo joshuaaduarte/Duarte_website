@@ -231,8 +231,8 @@ section img#stars{
   }
   
   #inner {
-    width: 60em;
-    height: 40em;
+    width: 60vh;
+    height: 40vh;
     background-size: cover;
     background-image: url("media/main/josh.png");
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
