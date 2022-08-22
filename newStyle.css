@@ -228,11 +228,13 @@ section img#stars{
   
   #container {
     perspective: 30px;
+    justify-content: center;
   }
   
   #inner {
-    width: 60vh;
+    width: 90%;
     height: 40vh;
+    display: block;
     background-size: cover;
     background-image: url("media/main/josh.png");
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
