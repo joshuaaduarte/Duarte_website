@@ -244,3 +244,10 @@ section img#stars{
     -o-transition: transform 0.5s;
     border-radius: 5%;
   }
+
+  #aboutme {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
