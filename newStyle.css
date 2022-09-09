@@ -194,7 +194,6 @@ section img#stars{
     min-height: 50vh;
   
     /* Centers the container in the middle of the screen */
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
@@ -207,10 +206,10 @@ section img#stars{
     position: relative;
     z-index: 10; 
     width: 100%;
+    height: 100%;
     min-height: 50vh;
-  
+
     /* Centers the container in the middle of the screen */
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
@@ -223,7 +222,7 @@ section img#stars{
     z-index: 10; 
     width: 100%;
     min-height: 50vh;
-  
+    
     /* Centers the container in the middle of the screen */
     display: flex;
     justify-content: center;
@@ -281,6 +280,8 @@ section img#stars{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
     z-index: 10 !important;
 }
 
@@ -355,6 +356,10 @@ section img#stars{
 
 }
 
-#aboutMeText {
+#textColor {
     color: whitesmoke;
 }
+
+
+/* Personal Project Content */
+
