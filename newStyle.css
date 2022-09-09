@@ -18,6 +18,25 @@ body {
     max-height: 100vh;
 }
 
+/* ID's pertaining to  */
+
+#aboutMeSection{
+    color:none;
+}
+
+#experienceSection{
+    color:none;
+}
+
+#personalProjectSection{
+    color:none;
+}
+
+#recognitionSection{
+    color:none;
+}
+
+
 
 section{
     position: relative;
@@ -117,6 +136,7 @@ section img#stars{
 
 } */
 
+/* Colors for the background */
 
 .lightblue {
     background: #B7d5d4;
@@ -149,6 +169,7 @@ section img#stars{
 
     margin: 0;
 }
+
 
 .aeroBlue{
     background: #d6f9dd;
@@ -211,14 +232,7 @@ section img#stars{
     margin: 0;
 }
 
-.spacer{
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 10 !important;
-}
+/* Images for the segments between the images */
 
 .layer1 {
     background-image: url('media/svg/layer1.svg');
@@ -260,6 +274,15 @@ section img#stars{
     z-index: 10 !important;
     background-image: url('media/svg/layer6.svg');
 } 
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 10 !important;
+}
 
 .z-up{
     z-index: 15;
