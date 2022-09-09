@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,10 +15,11 @@
 
 </head>
 
+
 <body>
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="z-index: 10">
+
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="z-index: 15">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="#">Navbar</a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -28,18 +29,30 @@
 				<a class="nav-link active" aria-current="page" href="#">Home</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Features</a>
+				<a class="nav-link" href="#">About Me</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Pricing</a>
+				<a class="nav-link" href="#">Experience</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Personal Projects</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Recognitions</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Resume</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Blog</a>
 			  </li>
 			  <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  Dropdown link
+				  Contact Me
 				</a>
 				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="#">Action</a></li>
-				  <li><a class="dropdown-item" href="#">Another action</a></li>
+				  <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+				  <li><a class="dropdown-item" href="#">Email</a></li>
 				  <li><a class="dropdown-item" href="#">Something else here</a></li>
 				</ul>
 			  </li>
@@ -48,11 +61,12 @@
 		</div>
 	  </nav>
 	
-	<section>
+	<section style="overflow-y: hidden;">
 		<img src="media/main/stars.png" id="stars">
 
 		<h2 id="textFront">Joshua Duarte</h2>
-		<h4 id="textBottom">Mechanical Engineer | U.C. Berkeley '23</h4>
+		<h4 id="textBottom">Designer | Maker | Mechanical Engineer</h4>
+
 		<img src="media/main/mountainBack.png" id="mountainsBack">
 		<img src="media/main/mountainFront.png" id="mountainsFront">
 	</section>
@@ -62,10 +76,10 @@
 	<!-- About me content -->
 	<div class="container-fluid"> 
 		<div class="row">
-			<div id="aboutMePhoto" class="col-lg-6 d-flex justify-content-center p-5">
+			<div id="aboutMePhoto" class="col-xl-6 d-flex justify-content-center align-self-center p-5">
 					<img  src="media/images/Portraits/josh-cover.jpg" class="img-fluid rounded-4 top-50" alt="...">
 			</div>
-			<div class="col-lg-6 p-4" >
+			<div class="col-xl-6 p-4" >
 				<h3 id="aboutMeText" class="display-3 light">About Me</h3>
 				<p id="aboutMeText" class="lead">
 					Hi, my name is Joshua Duarte! I am a maker, a designer, and a recent graduate of Texas A&M 
@@ -89,6 +103,26 @@
 	</div>
 
 	<div class="spacer layer3" style="z-index: 10"></div>
+
+	<div class="container-fluid spacer cyan" style="z-index: 10">
+		<h1>Experience</h1>
+	</div>
+
+	<div class="spacer layer4" style="z-index: 10"></div>
+
+	<div class="container-fluid spacer orange" style="z-index: 10">
+		<h1>Personal Projects</h1>
+	</div>
+
+	<div class="spacer layer5" style="z-index: 10"></div>
+
+	<div class="container-fluid spacer gray" style="z-index: 10; overflow-y: hidden;">
+		<h1>Recognitions</h1>
+	</div>
+
+	<div class="spacer layer6" style="z-index: 10"></div>
+
+
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"> </script>
@@ -189,5 +223,40 @@
 		container.onmousemove = onMouseMoveHandler;
 		})();
 	</script>
+	<!-- Footer -->
+	<footer class="page-footer font-small  pt-4 " style="background-color:#001220; overflow: hidden;">
+
+		<!-- Footer Text -->
+		<div class="container-fluid text-center text-md-left">
+		
+			<!-- Grid row -->
+			<div class="row align-items-center">
+		
+			<!-- Grid column -->
+			<div class="col-sm-12 mt-md-0 mt-3">
+		
+							
+			</div>
+			
+	
+		
+			</div>
+			<!-- Grid row -->
+		
+		</div>
+		<!-- Footer Text -->
+		
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3" style="color: teal;">© 2022 Copyright
+		</div>
+		<!-- Copyright -->
+		
+	</footer>
+
+
+
+
 </body>
+
+
 </html>
