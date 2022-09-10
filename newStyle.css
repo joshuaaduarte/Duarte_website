@@ -161,7 +161,6 @@ section img#stars{
     min-height: 50vh;
   
     /* Centers the container in the middle of the screen */
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
