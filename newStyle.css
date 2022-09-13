@@ -28,7 +28,7 @@ body {
     color:none;
 }
 
-#personalProjectSection{
+#projectSection{
     color:none;
 }
 
@@ -362,3 +362,12 @@ section img#stars{
 
 /* Personal Project Content */
 
+/* Footer Content */
+
+.hoverGray {
+    color: #488286;
+  }
+  
+.hoverGray :hover {
+    color: white;
+  }
