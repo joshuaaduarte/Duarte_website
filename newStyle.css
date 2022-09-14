@@ -371,3 +371,7 @@ section img#stars{
 .hoverGray :hover {
     color: white;
   }
+
+.hoverDark{
+    color: #4f4b3eba
+}
