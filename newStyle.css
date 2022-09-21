@@ -18,6 +18,10 @@ body {
     max-height: 100vh;
 }
 
+.textFontTop{
+    font-family: 'Quicksand', sans-serif;
+}
+
 /* ID's pertaining to  */
 
 #aboutMeSection{
@@ -296,6 +300,10 @@ section img#stars{
         transform: translateY(200px);
     }
 
+    .project_image{
+        height: 550px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -306,11 +314,19 @@ section img#stars{
         transform: translateY(200px);
     }
 
+    .project_image{
+        height: 350px;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
     #textBottom{
         transform: translateY(30px);
+    }
+
+    .project_image{
+        height: 350px;
     }
 
 
@@ -320,6 +336,12 @@ section img#stars{
     #textBottom{
         transform: translateY(10px);
     }
+
+    .project_image{
+        height: 350px;
+    }
+
+
 }
 
 
@@ -374,4 +396,90 @@ section img#stars{
 
 .hoverDark{
     color: #4f4b3eba
+}
+
+/* Project Content */
+.project_image {
+    position: relative;
+    height: 350px;
+    max-width: 450px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    padding: 15px;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.35s ease-in-out;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    align-items: center;
+}
+
+/* Recognitions */
+.project_image2 {
+    position: relative;
+    height: 250px;
+    min-width: 350;
+    max-width: 400px;
+}
+
+.image__overlay2 {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.712);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+    padding: 15px;
 }
