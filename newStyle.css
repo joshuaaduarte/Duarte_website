@@ -292,7 +292,21 @@ section img#stars{
     z-index: 15;
 }
 
-@media (min-width: 1025px){
+@media (min-width: 2100px){
+    #textBottom{
+        transform: translateY(150px);
+    }
+    #textBottom2{
+        transform: translateY(200px);
+    }
+
+    .project_image{
+        height: 550px;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 2100px){
     #textBottom{
         transform: translateY(100px);
     }
