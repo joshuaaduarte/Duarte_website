@@ -204,6 +204,22 @@ section img#stars{
     margin: 0;
 }
 
+
+.black{
+    background: #000000;
+    position: relative;
+    z-index: 10; 
+    width: 100%;
+    min-height: 50vh;
+  
+    /* Centers the container in the middle of the screen */
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+
 .cyan{
     background: #488286;
     position: relative;
@@ -233,6 +249,21 @@ section img#stars{
     overflow-x: hidden;
     margin: 0;
 }
+
+.glow {
+    /* Your existing card styles here */
+    /* ... */
+    /* ... */
+    transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+  
+    /* Add a slight box shadow to create the glow effect */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    border-radius: 0.4rem;
+  }
+  
+  .glow:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Increase the box shadow to create a stronger glow effect */
+  }
 
 /* Images for the segments between the images */
 
@@ -444,7 +475,9 @@ section img#stars{
 }
 
 .image__overlay--blur {
+    transition: box-shadow backdrop-filter 0.3s ease-in-out;
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 
 .image__overlay > * {
