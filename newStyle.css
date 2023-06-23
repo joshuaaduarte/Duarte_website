@@ -476,7 +476,7 @@ section img#stars{
 
 .image__overlay--blur {
     transition: box-shadow backdrop-filter 0.3s ease-in-out;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 
