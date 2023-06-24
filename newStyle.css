@@ -423,7 +423,7 @@ section img#stars{
 }
 
 #textColor {
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -529,4 +529,24 @@ section img#stars{
     opacity: 1;
     transition: opacity 0.35s ease-in-out;
     padding: 15px;
+}
+
+.aboutSkillCard {
+    box-shadow: rgba(255, 255, 255, 0.25);
+    background-color: #ffffff24;
+    border-radius: 0.5rem;
+}
+
+.aboutHeader{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.aboutText {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.skillIcon {
+    width: 30px;
 }
