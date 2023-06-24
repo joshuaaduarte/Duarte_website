@@ -351,11 +351,15 @@ section img#stars{
 }
 
 @media (min-width: 1025px) and (max-width: 2100px){
+    #textFront{
+        transform: translateY(-30px);
+    }
+    
     #textBottom{
-        transform: translateY(80px);
+        transform: translateY(50px);
     }
     #textBottom2{
-        transform: translateY(140px);
+        transform: translateY(110px);
     }
 
     .project_image{
@@ -365,11 +369,15 @@ section img#stars{
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    #textFront{
+        transform: translateY(-30px);
+    }
+
     #textBottom{
-        transform: translateY(30px);
+        transform: translateY(10px);
     }
     #textBottom2{
-        transform: translateY(60px);
+        transform: translateY(40px);
     }
 
     .project_image{
