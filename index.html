@@ -66,6 +66,13 @@
 
 		<h2 id="textFront">Joshua Duarte</h2>
 		<h4 id="textBottom">Designer | Maker | Mechanical Engineer</h4>
+		<div id="textBottom2">
+			<a class="hoverGrey" href="https://www.linkedin.com/in/joshua-duarte/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+			<a class="hoverGrey" href="https://github.com/joshuaaduarte" target="_blank" style="padding-left:2rem; padding-right: 2rem;"><i class="fa-brands fa-github fa-3x"></i></a>
+			<a class="hoverGrey"  href="media/documents/Duarte-Joshua.pdf" target="_blank" ><i class="fa-regular fa-file fa-3x"></i></a>
+		</div>
+			
+			
 
 		<img src="media/main/mountainBack.png" id="mountainsBack">
 		<img src="media/main/mountainFront.png" id="mountainsFront">
@@ -505,12 +512,15 @@
 		let mountainFront = document.getElementById("mountainsFront");
 		let textFront = document.getElementById("textFront");
 		let textBottom = document.getElementById("textBottom");
+		let textBottom2 = document.getElementById("textBottom2");
+
 
 		window.addEventListener("scroll", function(){
 			let value = window.scrollY;
 			stars.style.bottom = value * .25 + 'px';
 			textFront.style.top =  40 + value * .09 + 'vh';
 			textBottom.style.top =  45 + value * .09 + 'vh';
+			textBottom2.style.top =  47 + value * .09 + 'vh';
 			mountainBack.style.bottom = value * .1 + 'px';
 		} )
 

@@ -101,6 +101,16 @@ section img#stars{
 
 }
 
+#textBottom2{
+    position: absolute;
+    color: #fff;
+    white-space: no-wrap;
+    font-size: 1.25vw;
+    z-index: 9;
+
+
+}
+
 .sec{
     position: relative; 
     padding: 100px;
@@ -270,6 +280,7 @@ section img#stars{
 .layer1 {
     background-image: url('media/svg/layer1.svg');
     position: relative;
+    display: block;
 }
 
 .layerBack {
@@ -286,6 +297,7 @@ section img#stars{
 
 .layer3 {
     position: relative;
+    display: block;
     z-index: 10 !important;
     background-image: url('media/svg/layer3.svg');
 } 
@@ -305,6 +317,7 @@ section img#stars{
 .layer6 {
     position: relative;
     z-index: 10 !important;
+    display: flex;
     background-image: url('media/svg/layer6.svg');
 } 
 
@@ -325,10 +338,10 @@ section img#stars{
 
 @media (min-width: 2100px){
     #textBottom{
-        transform: translateY(150px);
+        transform: translateY(130px);
     }
     #textBottom2{
-        transform: translateY(200px);
+        transform: translateY(175px);
     }
 
     .project_image{
@@ -339,10 +352,10 @@ section img#stars{
 
 @media (min-width: 1025px) and (max-width: 2100px){
     #textBottom{
-        transform: translateY(100px);
+        transform: translateY(80px);
     }
     #textBottom2{
-        transform: translateY(200px);
+        transform: translateY(140px);
     }
 
     .project_image{
@@ -353,10 +366,10 @@ section img#stars{
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #textBottom{
-        transform: translateY(80px);
+        transform: translateY(30px);
     }
     #textBottom2{
-        transform: translateY(200px);
+        transform: translateY(60px);
     }
 
     .project_image{
@@ -367,7 +380,11 @@ section img#stars{
 
 @media (min-width: 481px) and (max-width: 767px) {
     #textBottom{
-        transform: translateY(30px);
+        transform: translateY(20px);
+    }
+
+    #textBottom2{
+        transform: translateY(40px);
     }
 
     .project_image{
@@ -379,7 +396,10 @@ section img#stars{
 
 @media (max-width: 480px) {
     #textBottom{
-        transform: translateY(10px);
+        transform: translateY(5px);
+    }
+    #textBottom2{
+        transform: translateY(15px);
     }
 
     .project_image{
@@ -437,6 +457,14 @@ section img#stars{
   
 .hoverGray :hover {
     color: white;
+  }
+
+.hoverGrey {
+    color: #ffffff;
+  }
+  
+.hoverGrey :hover {
+    color: rgb(133, 133, 133);
   }
 
 .hoverDark{
