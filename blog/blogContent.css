@@ -105,7 +105,14 @@ header.masthead .post-heading .meta, header.masthead .post-heading .subheading {
 .section-heading2 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 3.75rem;
+  margin-top:2.75rem;
+}
+
+.section-heading3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  color: #495153;
 }
 
 .hoverblue {
