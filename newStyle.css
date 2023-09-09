@@ -588,6 +588,26 @@ section img#stars{
     transform: translateY(0);
 }
 
+.image__overlay2--blur {
+    transition: box-shadow backdrop-filter 0.3s ease-in-out;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.image__overlay2 > * {
+    transform: translateY(20px);
+    transition: transform 0.35s ease-in-out;
+}
+
+.image__overlay2:hover {
+    opacity: 1;
+
+}
+
+.image__overlay2:hover > * {
+    transform: translateY(0);
+}
+
 .image__title {
     font-size: 2em;
     font-weight: bold;
