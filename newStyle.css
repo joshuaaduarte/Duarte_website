@@ -426,6 +426,15 @@ section img#stars{
 
 }
 
+@media (max-width: 1024px) {
+
+.aboutMePhoto3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     #textFront{
         transform: translateY(-30px);
@@ -441,6 +450,10 @@ section img#stars{
     .project_image{
         height: 350px;
     }
+
+
+
+
 
 }
 
