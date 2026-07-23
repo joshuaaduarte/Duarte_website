@@ -109,7 +109,9 @@ section img#stars{
     color: #fff;
     white-space: nowrap;
     font-size: 1.25vw;
-    z-index: 9;
+    /* Sit above the front mountain (z-index 10) so the icons and
+       "View My Work" button are never clipped on shorter viewports */
+    z-index: 11;
 
 
 }
