@@ -84,8 +84,9 @@ section img#stars{
 
 #textFront{
     position: absolute;
+    top: 40vh;
     color: #fff;
-    white-space: no-wrap;
+    white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
 
@@ -93,8 +94,9 @@ section img#stars{
 
 #textBottom{
     position: absolute;
+    top: 45vh;
     color: #fff;
-    white-space: no-wrap;
+    white-space: nowrap;
     font-size: 3.5vw;
     z-index: 9;
 
@@ -103,12 +105,38 @@ section img#stars{
 
 #textBottom2{
     position: absolute;
+    top: 47vh;
     color: #fff;
-    white-space: no-wrap;
+    white-space: nowrap;
     font-size: 1.25vw;
     z-index: 9;
 
 
+}
+
+#heroCta{
+    margin-top: 1.75rem;
+}
+
+.heroBtn{
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.heroBtn:hover,
+.heroBtn:focus-visible{
+    background: #fff;
+    color: #2b1055;
+    transform: translateY(-2px);
 }
 
 .sec{
@@ -489,26 +517,6 @@ section img#stars{
 }
 
 
-  
-#container {
-    perspective: 30px;
-    justify-content: center;
-}
-  
-#inner {
-    width: 90%;
-    height: 40vh;
-    display: block;
-    background-size: cover;
-    background-image: url("media/main/josh.png");
-    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-    border-radius: 5%;
-}
-
 #aboutme {
   padding-left: 50px;
   padding-right: 50px;
@@ -521,7 +529,7 @@ section img#stars{
 
 }
 
-#textColor {
+.text-color {
     color: rgb(255, 255, 255);
 }
 
@@ -676,4 +684,13 @@ section img#stars{
 
 .skillIcon {
     width: 30px;
+}
+
+.skillFa {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 1.15rem;
+    color: #ffffff;
+    line-height: 1;
 }
