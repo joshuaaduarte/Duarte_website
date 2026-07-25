@@ -696,3 +696,110 @@ section img#stars{
     color: #ffffff;
     line-height: 1;
 }
+
+/* ===== Projects: filter tabs + gallery ===== */
+.projectFilters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0.5rem auto 2.5rem;
+    padding: 0 1rem;
+}
+
+.filterBtn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #cfe0e1;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.filterBtn:hover,
+.filterBtn:focus-visible {
+    color: #fff;
+    border-color: #488286;
+    transform: translateY(-1px);
+}
+
+.filterBtn.active {
+    background: #488286;
+    border-color: #488286;
+    color: #fff;
+}
+
+/* Uniform gallery cards (scoped to the filterable grid) */
+.projGrid .project_image {
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projGrid .project_image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55);
+}
+
+.projGrid .image__img {
+    object-fit: cover;
+}
+
+/* Always-visible title bar; hides when the hover overlay takes over */
+.card-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1.4rem 1rem 0.9rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    color: #fff;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+}
+
+.project_image:hover .card-caption {
+    opacity: 0;
+}
+
+.card-caption__title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.card-caption__tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: rgba(72, 130, 134, 0.95);
+    padding: 0.22rem 0.55rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+}
+
+/* Filtering */
+.proj-col {
+    transition: opacity 0.3s ease;
+}
+
+.proj-col.is-hidden {
+    display: none !important;
+}

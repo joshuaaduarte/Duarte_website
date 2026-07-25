@@ -301,11 +301,21 @@
 			<h2 class="display-2 text-color">PROJECTS</h2>
 		</div>
 
-		<!-- Recent web projects -->
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
+		<!-- Category filter tabs -->
+		<div class="projectFilters" role="tablist" aria-label="Filter projects by category">
+			<button class="filterBtn active" data-filter="all" type="button">All</button>
+			<button class="filterBtn" data-filter="hardware" type="button">Hardware</button>
+			<button class="filterBtn" data-filter="software" type="button">Software</button>
+			<button class="filterBtn" data-filter="maker" type="button">Maker &amp; Crafting</button>
+		</div>
+
+		<!-- Filterable project grid -->
+		<div class="row justify-content-center projGrid" id="projectGrid">
+
+			<!-- Aucosto -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/aucosto.png" alt="Aucosto personal workspace dashboard">
+					<img class="image__img rounded-4" src="media/images/projects/aucosto.png" alt="Aucosto personal workspace dashboard">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Aucosto</div>
 						<p class="image__description">
@@ -314,11 +324,30 @@
 							<a href="https://aucosto.vercel.app" target="_blank" rel="noopener" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Aucosto</span><span class="card-caption__tag">Software</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4 ">
+
+			<!-- Gambit -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="hardware">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/jawedding.png" alt="Ana and Joshua wedding website">
+					<img class="image__img rounded-4" src="media/images/projects/gambitAssembly.jpg" alt="Gambit automated chessboard project">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">Gambit</div>
+						<p class="image__description">
+							A completely automated chess set capable of challenging Grandmasters. I am leading the hardware design within the system, currently in the subsystem design and testing phase.
+							<br>
+							<a href="https://github.com/joshuaaduarte/Gambit" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">Gambit</span><span class="card-caption__tag">Hardware</span></div>
+				</div>
+			</div>
+
+			<!-- Wedding site -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/projects/jawedding.png" alt="Ana and Joshua wedding website">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Ana &amp; Joshua Wedding Site</div>
 						<p class="image__description">
@@ -327,260 +356,311 @@
 							<a href="https://jawedding.vercel.app" target="_blank" rel="noopener" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Ana &amp; Joshua Wedding Site</span><span class="card-caption__tag">Software</span></div>
 				</div>
 			</div>
-		</div>
 
-
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-1"></div>
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
-				<div class="project_image  ">
-					<img class ="image__img rounded-4 " src="media/images/projects/gambitAssembly.jpg" alt="Gambit automated chessboard project">
-					<div class="image__overlay image__overlay--blur rounded-4">
-						<div class="image__title">Gambit</div>
-						<p class="image__description">
-							A completely automated chess set capable of challenging Grandmasters. I
-							am leading the Hardware Design within the system. Currently in the subsytem design and testing phase.
-							<br>
-							<a href="https://github.com/joshuaaduarte/Gambit" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5 p-4  justify-content-start">
+			<!-- Blue Gogi -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="hardware">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/treadmill.jpg" alt="Blue Gogi omni-directional VR treadmill">
+					<img class="image__img rounded-4" src="media/images/projects/treadmill.jpg" alt="Blue Gogi omni-directional VR treadmill">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Blue Gogi: Omni Directional Treadmill</div>
 						<p class="image__description">
-							Developing a treadmill capable of allowing users to move endlessly in any direction 
-							while maintaining an immersive and safe experience within virtual reality. 
+							Developing a treadmill capable of allowing users to move endlessly in any direction while maintaining an immersive and safe experience within virtual reality.
 							<br>
 							<a href="media/documents/projectDocs/projectBrief.pdf" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Blue Gogi Treadmill</span><span class="card-caption__tag">Hardware</span></div>
 				</div>
 			</div>
-			<div class="col-md-1"></div>
-		</div>
 
-
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
+			<!-- Vision Pro Packaging -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="hardware">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/rough assembly v2.png" alt="Apple Vision Pro packaging design">
+					<img class="image__img rounded-4" src="media/images/projects/rough assembly v2.png" alt="Apple Vision Pro packaging design">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title"><i class="fa fa-apple" aria-hidden="true"></i> Vision Pro Packaging</div>
 						<p class="image__description">
-							Spent seven days following the design process to create the packaging of the unreleased Apple Vision Pro that will be released in early 2024.
+							Spent seven days following the design process to create packaging for the Apple Vision Pro.
 							<br>
-							<a href="https://www.joshuaduarte.com/blog/visionPro.html" target="_blank" style="text-decoration: none; ">Click To Learn More</a>		
+							<a href="https://www.joshuaduarte.com/blog/visionPro.html" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Vision Pro Packaging</span><span class="card-caption__tag">Hardware</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4 ">
+
+			<!-- Nissan -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/ethnicity.JPG" alt="Ethnicity prediction neural network">
+					<img class="image__img rounded-4" src="media/images/projects/nissanDesign.jpg" alt="Nissan augmented-reality design concept">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">Nissan Design Challenge</div>
+						<p class="image__description">
+							Worked with two others to create an augmented reality platform that would help Nissan increase sustainability efforts on both the environmental and customer fronts, aiming to better the vehicle purchasing experience.
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">Nissan Design Challenge</span><span class="card-caption__tag">Hardware</span></div>
+				</div>
+			</div>
+
+			<!-- HP Portal -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="hardware">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/projects/portal.png" alt="HP Portal virtual-meeting device">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">HP: 'Phygitally' Connected</div>
+						<p class="image__description">
+							Used human-centered design methods to create a stand-alone product that enhances social interaction and the overall experience of virtual meetings.
+							<br>
+							<a href="https://www.behance.net/gallery/158739541/The-PORTAL" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">HP: 'Phygitally' Connected</span><span class="card-caption__tag">Hardware</span></div>
+				</div>
+			</div>
+
+			<!-- Sign Language Tracker -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/blog/6-25/G.JPG" alt="Sign language gesture tracker">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">Sign Language Tracker</div>
+						<p class="image__description">
+							Using OpenCV, MediaPipe, and TensorFlow, this project detects hand gestures that resemble the sign language alphabet. The end goal is to measure a user's signing words-per-minute to encourage growth in the language.
+							<br>
+							<a href="https://github.com/joshuaaduarte/gestureRecognition" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">Sign Language Tracker</span><span class="card-caption__tag">Software</span></div>
+				</div>
+			</div>
+
+			<!-- Ethnicity NN -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/projects/ethnicity.JPG" alt="Ethnicity prediction neural network">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Ethnicity Prediction Neural Network</div>
 						<p class="image__description">
-              				Explored how various neural network models are used to help predict ethnicity while keeping in check the ethical concerns pertaining to the test cases.
-
+							Explored how various neural network models can help predict ethnicity while weighing the ethical concerns pertaining to the test cases.
 							<br>
 							<a href="media/documents/projectDocs/ethnicity.pdf" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Ethnicity Prediction NN</span><span class="card-caption__tag">Software</span></div>
 				</div>
 			</div>
-		</div>
 
-
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
+			<!-- Gimbal -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="hardware">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/gimbal.JPG" alt="Multi-axis camera gimbal">
+					<img class="image__img rounded-4" src="media/images/projects/gimbal.JPG" alt="Multi-axis camera gimbal">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Gimbal</div>
 						<p class="image__description">
-							Created a multi axis slider and gimbal for my webcam to allow for the easy manipulation of camera angles during virtual meetings and events for better presentation purposes. 
+							Built a multi-axis slider and gimbal for my webcam to easily manipulate camera angles during virtual meetings and events for better presentation.
 							<br>
 							<a href="https://github.com/joshuaaduarte/Gimbal" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Gimbal</span><span class="card-caption__tag">Maker</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4 ">
-				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/nissanDesign.jpg" alt="Nissan augmented-reality design concept">
-					<div class="image__overlay image__overlay--blur rounded-4">
-						<div class="image__title">Nissan Design Challenge</div>
-						<p class="image__description">
-              				Worked with two others to create a augmented reality platform that would allow Nissan to increase sustainability efforts in both the environmental 
-							front as well as the customer front as it aimed to better the vehicle purchasing experience. 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
+			<!-- Woodworking -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="maker">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/portal.png" alt="HP Portal virtual-meeting device">
+					<img class="image__img rounded-4" src="media/images/crafting/woodenChair.jpeg" alt="Woodworking build">
 					<div class="image__overlay image__overlay--blur rounded-4">
-						<div class="image__title">HP: 'Phygitally' Connected</div>
+						<div class="image__title">Walnut Chair</div>
 						<p class="image__description">
-							This project aimed to enhance the social interaction in virtual meetings
-							through human centered design methods to create a stand alone product that 
-							enhanced the virtual meeting experience. 
-							<br>
-							<a href="https://www.behance.net/gallery/158739541/The-PORTAL" target="_blank" style="text-decoration: none; ">Click To Learn More</a> 
-							
+							Hand made wooden walnut chair utilizing japanese pull saw, chisels, hand planes, and bit of grit.
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Walnut Chair</span><span class="card-caption__tag">Maker</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4 ">
-				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/blog/6-25/G.JPG" alt="Sign language gesture tracker">
-					<div class="image__overlay image__overlay--blur rounded-4">
-						<div class="image__title">Sign Language Tracker</div>
-						<p class="image__description">
-              				Using OpenCV, mediapipe, and tensorflow, this project detects gestures in ones hand 
-							that resemble those in the sign language alphabet. The end goal is to see the sign language words 
-							per minute speed of the user to encourage the growth and understanding of the language. 
-							<br>
-							<a href="https://github.com/joshuaaduarte/gestureRecognition" target="_blank" style="text-decoration: none; ">Click To Learn More</a> 
-							
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="maker">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/planner.jpg" alt="BUTLR smart planner app">
+					<img class="image__img rounded-4" src="media/images/crafting/keyHolder.jpeg" alt="Woodworking build">
 					<div class="image__overlay image__overlay--blur rounded-4">
-						<div class="image__title">BUTLR</div>
+						<div class="image__title">Key and Picture Holder</div>
 						<p class="image__description">
-							BUTLR is a new kind of planner that aims to revolutionize the way people plan and reach their goals, tasks, 
-							and grow healthy habits. Using advanced machine learning algorithms, BUTLR actively learns the user's habits and 
-							schedule to provide personalized planning and goal-setting solutions.
+							Key holder made out of walnut with 3D printed hooks and customizable mounting system. 
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Key and Picture Holder</span><span class="card-caption__tag">Maker</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4">
+
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="maker">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/boiling.JPG" alt="Machine learning study of boiling under gravity">
+					<img class="image__img rounded-4" src="media/images/crafting/planters.jpeg" alt="Woodworking build">
 					<div class="image__overlay image__overlay--blur rounded-4">
-						<div class="image__title">Machine Learning: Gravitational Effects on Boiling</div>
+						<div class="image__title">Patio Planters</div>
 						<p class="image__description">
-							Used machine learning to explore the interplay of gravity and Marangoni effects during boiling of 
-							a water/2-propanol mixture for a range of gravity acceleration conditions. 
+							Hand crafted patio planters made out of cedar to withstand the elements while minimizing cost with budget of $45
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">Patio Planters</span><span class="card-caption__tag">Maker</span></div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="maker">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/crafting/engagementBox.jpeg" alt="Woodworking build">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">Engagement Box</div>
+						<p class="image__description">
+							Custom walnut engagement box made utilizing a mill and laser engraver (she said yes!)
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">Engagement Box</span><span class="card-caption__tag">Maker</span></div>
+				</div>
+			</div>
+
+			<!-- Sewing -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="maker">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/crafting/apron.jpeg" alt="Sewing project">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">Apron</div>
+						<p class="image__description">
+							First sewing project, a maker kitchen apron made from durable canvas and leather
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">Apron</span><span class="card-caption__tag">Maker</span></div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="maker">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/crafting/cwMorganBag.jpeg" alt="Sewing project">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">CW Morgan Bag</div>
+						<p class="image__description">
+							Reverse engineered $1000+ CW Morgan bag to learn about leather crafting and sewing techniques
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">CW Morgan Bag</span><span class="card-caption__tag">Maker</span></div>
+				</div>
+			</div>
+
+			<!-- Leather crafting -->
+
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="maker">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/crafting/journalCover.jpeg" alt="Leather crafting project">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">Leather Journal Cover</div>
+						<p class="image__description">
+							Hand-cut, stitched, and finished leather journal cover for my daily carry journal. [Add a short description of a favorite piece here.]
+						</p>
+					</div>
+					<div class="card-caption"><span class="card-caption__title">Leather Journal Cover</span><span class="card-caption__tag">Maker</span></div>
+				</div>
+			</div>
+
+			<!-- Boiling ML -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
+				<div class="project_image">
+					<img class="image__img rounded-4" src="media/images/projects/boiling.JPG" alt="Machine learning study of boiling under gravity">
+					<div class="image__overlay image__overlay--blur rounded-4">
+						<div class="image__title">Gravitational Effects on Boiling</div>
+						<p class="image__description">
+							Used machine learning to explore the interplay of gravity and Marangoni effects during boiling of a water/2-propanol mixture across a range of gravity conditions.
 							<br>
 							<a href="media/documents/projectDocs/Understanding-the-gravitational-effects-on-boiling-through-machine.pdf" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Gravitational Effects on Boiling</span><span class="card-caption__tag">Software</span></div>
 				</div>
-
 			</div>
-		</div>
 
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
+			<!-- Solar Cell NN -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/solar_cell.jpg" alt="Photovoltaic solar cell neural network">
+					<img class="image__img rounded-4" src="media/images/projects/solar_cell.jpg" alt="Photovoltaic solar cell neural network">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Photovoltaic Solar Cell Neural Network</div>
 						<p class="image__description">
-							Modeled an artificial neural network to study the performance characteristics of solar photovoltaic cells
+							Modeled an artificial neural network to study the performance characteristics of solar photovoltaic cells.
 							<br>
 							<a href="media/documents/projectDocs/Implementation-of-Machine-Learning-to-Evaluate-the-Performance-of-a-Solar-PV-Cell.pdf" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Solar Cell Neural Network</span><span class="card-caption__tag">Software</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4">
+
+			<!-- Boiler NN -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/solar_plant.JPG" alt="Solar boiler modeling neural network">
+					<img class="image__img rounded-4" src="media/images/projects/solar_plant.JPG" alt="Solar boiler modeling neural network">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Boiler Modeling Neural Network</div>
 						<p class="image__description">
-							Using an artificial neural network to accurately model a the electricity 
-							output of a boiler that captures incident solar rays by an array of heliostats.
+							Using an artificial neural network to accurately model the electricity output of a boiler that captures incident solar rays via an array of heliostats.
 							<br>
 							<a href="media/documents/projectDocs/boilerModel.pdf" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
-				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/calorieTracking.jpg" alt="Calorie tracker application">
-					<div class="image__overlay image__overlay--blur rounded-4">
-						<div class="image__title">Calorie Tracker</div>
-						<p class="image__description">
-							A project aimed at ensuring proper and methodological weight loss through the act of tracking meals, 
-							positive patterns in a user friendly environment created using Python. 
-						</p>
-					</div>
+					<div class="card-caption"><span class="card-caption__title">Boiler Modeling NN</span><span class="card-caption__tag">Software</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4 ">
+
+			<!-- Scissor Lift -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="hardware">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/scissorLift.jpg" alt="Manufactured scissor lift">
+					<img class="image__img rounded-4" src="media/images/projects/scissorLift.jpg" alt="Manufactured scissor lift">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Scissor Lift</div>
 						<p class="image__description">
-							A scissor lift that was aimed to familiarize creators with additive and subtractive manufacturing 
-							methods like that of 3D printing, lathe operations, mill operations, and other metal working tools. 
-							Ultimately held 6 kg with less than 3 millimeters of deflection. 
+							A scissor lift built to practice additive and subtractive manufacturing, including 3D printing, lathe, and mill operations. Ultimately held 6 kg with less than 3 mm of deflection.
 							<br>
 							<a href="media/documents/projectDocs/Scissorlift Report.pdf" target="_blank" style="text-decoration: none; ">Click To Learn More</a>
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Scissor Lift</span><span class="card-caption__tag">Hardware</span></div>
 				</div>
 			</div>
-		</div>
 
-		<div class="row row-col-3 justify-content-center" style="padding-bottom:0%">
-			<div class="col-md-5 p-4 d-md-flex justify-content-end">
+			<!-- The Right Left -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="hardware">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/projects/stoplight.jpg" alt="The Right Left traffic-sensor system">
+					<img class="image__img rounded-4" src="media/images/projects/stoplight.jpg" alt="The Right Left traffic-sensor system">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">The Right Left</div>
 						<p class="image__description">
-							The right left is a sensor based system that was created during a 24-hour hackathon that tackles the dreaded 
-							unprotected left hand turns. This system tracked the speed of oncoming traffic and would use pre-measured data to inform the driver.
+							A sensor-based system built during a 24-hour hackathon that tackles the dreaded unprotected left-hand turn by tracking oncoming traffic speed and using pre-measured data to inform the driver.
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">The Right Left</span><span class="card-caption__tag">Hardware</span></div>
 				</div>
 			</div>
-			<div class="col-md-5 p-4">
+
+
+
+			<!-- Fermii -->
+			<div class="col-lg-4 col-md-6 p-3 proj-col" data-cat="software">
 				<div class="project_image">
-					<img class ="image__img rounded-4" src="media/images/Fermii/Fermi_Logo.png" alt="Fermii study app logo">
+					<img class="image__img rounded-4" src="media/images/Fermii/Fermi_Logo.png" alt="Fermii study app logo">
 					<div class="image__overlay image__overlay--blur rounded-4">
 						<div class="image__title">Fermii</div>
 						<p class="image__description">
-							An iOS based application that would allow users to know when and
-							where their fellow classmates would be studying the same material. This would encourage people to
-							work with one another and learn through teaching. Not only would one benefit from learning from one
-							another, but would be rewarded for it too.
+							An iOS app that lets users find when and where classmates are studying the same material, encouraging people to work together and learn through teaching, with rewards along the way.
 						</p>
 					</div>
+					<div class="card-caption"><span class="card-caption__title">Fermii</span><span class="card-caption__tag">Software</span></div>
 				</div>
 			</div>
+
 		</div>
-		
+
 	</div>
 
 	<div class="spacer layer5" id="recognitionSection" style="z-index: 10"></div>
@@ -717,6 +797,25 @@
 
 	<script>
 		document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+	</script>
+
+	<!-- Project category filtering -->
+	<script>
+		(function () {
+			const filterBtns = document.querySelectorAll('.filterBtn');
+			const projCols = document.querySelectorAll('.proj-col');
+			filterBtns.forEach(function (btn) {
+				btn.addEventListener('click', function () {
+					filterBtns.forEach(function (b) { b.classList.remove('active'); });
+					btn.classList.add('active');
+					const cat = btn.dataset.filter;
+					projCols.forEach(function (col) {
+						const show = cat === 'all' || col.dataset.cat === cat;
+						col.classList.toggle('is-hidden', !show);
+					});
+				});
+			});
+		})();
 	</script>
 
 </body>
